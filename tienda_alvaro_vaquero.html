@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <style>
+        .imagen {
+            width: 100%;  
+            height: 200px;  
+            object-fit: cover;  
+        }
+
+  
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Tienda Online</h1>
+
+        <div class="row">
+            <div class="col-md-9">
+                <div class="row">
+                    
+                    <div class="col-md-3 mb-4">
+                        <div class="card">
+                            <img src="https://images.unsplash.com/photo-1590252973599-bb37fb327a55?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="imagen" alt="Imagen del producto">
+                            <div class="card-body">
+                                <h5 id="nombre">APPLE iPad 10</h5>
+                                 <p>
+                                    Precio:
+                                    <span id="precio">328.29</span>
+                                 </p>
+                                <input type="number" id="cantidad" placeholder="cantidad" class="form-control form-control-sm mb-2" value="1" min="1"/>
+                                <button class= "btn btn-primary" onclick="agregarAlCarrito(this)" id="botonAgregar">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card">
+                            <img src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?q=80&w=1988&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="imagen" alt="Imagen del producto">
+                            <div class="card-body">
+                                <h5 id="nombre">Reloj Flynn</h5>
+                                 <p>
+                                    Precio:
+                                    <span id="precio">89.00</span>
+                                 </p>
+                                <input type="number" id="cantidad" placeholder="cantidad" class="form-control form-control-sm mb-2" value="1" min="1"/>
+                                <button class= "btn btn-primary" onclick="agregarAlCarrito(this)" id="botonAgregar">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card">
+                            <img src="https://images.unsplash.com/photo-1522115174737-2497162f69ec?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="imagen" alt="Imagen del producto">
+                            <div class="card-body">
+                                <h5 id="nombre">Fossil Tourer</h5>
+                                 <p>
+                                    Precio:
+                                    <span id="precio">219.00</span>
+                                 </p>
+                                <input type="number" id="cantidad" placeholder="cantidad" class="form-control form-control-sm mb-2" value="1" min="1"/>
+                                <button class= "btn btn-primary" onclick="agregarAlCarrito(this)" id="botonAgregar">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card">
+                            <img src="https://images.unsplash.com/photo-1511844941619-5eadcd3735e6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="imagen" alt="Imagen del producto">
+                            <div class="card-body">
+                                <h5 id="nombre">Portátil HP 15 full HD</h5>
+                                 <p>
+                                    Precio:
+                                    <span id="precio">429.50</span>
+                                 </p>
+                                <input type="number" id="cantidad" placeholder="cantidad" class="form-control form-control-sm mb-2" value="1" min="1"/>
+                                <button class= "btn btn-primary" onclick="agregarAlCarrito(this)" id="botonAgregar">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card">
+                            <img src="https://images.unsplash.com/photo-1691439378545-dd6b35ff2f7b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="imagen" alt="Imagen del producto">
+                            <div class="card-body">
+                                <h5 id="nombre">Smartwatch</h5>
+                                 <p>
+                                    Precio:
+                                    <span id="precio">285.00</span>
+                                 </p>
+                                <input type="number" id="cantidad" placeholder="cantidad" class="form-control form-control-sm mb-2" value="1" min="1"/>
+                                <button class= "btn btn-primary" onclick="agregarAlCarrito(this)" id="botonAgregar">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card">
+                            <img src="https://images.unsplash.com/photo-1709212766552-52453d1b2c57?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="imagen" alt="Imagen del producto">
+                            <div class="card-body">
+                                <h5 id="nombre">Iphone 15 pro</h5>
+                                 <p>
+                                    Precio:
+                                    <span id="precio">859.99</span>
+                                 </p>
+                                <input type="number" id="cantidad" placeholder="cantidad" class="form-control form-control-sm mb-2" value="1" min="1"/>
+                                <button class= "btn btn-primary" onclick="agregarAlCarrito(this)" id="botonAgregar">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="card">
+                            <img src="https://images.unsplash.com/photo-1590459963567-1bf6b8595be1?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="imagen" alt="Imagen del producto">
+                            <div class="card-body">
+                                <h5 id="nombre">Samsung Galaxy Note</h5>
+                                 <p>
+                                    Precio:
+                                    <span id="precio">300.00</span>
+                                 </p>
+                                <input type="number" id="cantidad" placeholder="cantidad" class="form-control form-control-sm mb-2" value="1" min="1"/>
+                                <button class= "btn btn-primary" onclick="agregarAlCarrito(this)" id="botonAgregar">Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div> 
+                                     
+                        <div class="col-md-3 mb-4">
+                            <div class="card">
+                                <img src="https://images.unsplash.com/photo-1542983396-d903783bb96b?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="imagen" alt="Imagen del producto">
+                                <div class="card-body">
+                                    <h5 id="nombre">Tablet Samsung</h5>
+                                     <p>
+                                        Precio:
+                                        <span id="precio">211.00</span>
+                                     </p>
+                                    <input type="number" id="cantidad" placeholder="cantidad" class="form-control form-control-sm mb-2" value="1" min="1"/>
+                                    <button class="btn btn-primary" onclick="agregarAlCarrito(this)" id="botonAgregar">Añadir al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                        
+                    </div>
+                    
+                
+
+                    
+
+            <div class="col-md-3">
+                <h2>Carrito</h2>
+                <div id="datos"></div>
+                <ul id="carrito">
+                    </ul>
+                <p>Total: <span id="cantidadTotal"></span> euros</p>
+                
+               
+                <button class="btn btn-success" onclick="comprarAhora()">Comprar Ahora</button>
+                <button class="btn btn-danger" onclick="eliminarProducto()">Eliminar Producto</button>
+            </div>
+        </div>
+    
+        
+     
+
+    
+   
+    <script>
+
+        let datosCompra = [];
+        
+
+        function agregarAlCarrito(boton) {
+
+            let parentElement = boton.parentElement;
+
+            const nombre =parentElement.querySelector('#nombre').textContent;
+            const precio = parentElement.querySelector('#precio').textContent;
+            const cantidad = parentElement.querySelector('#cantidad').value;
+
+           
+
+            const nuevoProducto = {
+                nombre: nombre,
+                precio: precio,
+                cantidad: cantidad
+            };
+
+            if(cantidad > 0){
+            
+
+            datosCompra.push(nuevoProducto);
+
+            datosCompra.forEach(item => {
+
+                console.log(item)
+
+
+            });
+            console.log("Nombre agregado al carrito" + datosCompra.toString);
+            mostrarProductos();
+            sumarProductos();}
+
+
+        }
+
+        function sumarProductos(){
+            
+            const cantidadTotal = document.getElementById('cantidadTotal');
+            let precio = 0;
+
+            datosCompra.forEach((item) => {
+
+                let precioroducto = parseFloat(item.precio) * parseInt(item.cantidad);
+                precio += precioroducto;
+
+            });
+
+            cantidadTotal.textContent = precio;
+            return precio;
+        }
+
+        function mostrarProductos() {
+           const contenedor = document.getElementById('datos');
+           contenedor.innerHTML = ""; // Limpiar contenido previo
+
+           datosCompra.forEach((dato, index) => {
+               contenedor.innerHTML += `
+                   <h3>Código: ${index + 1}</h3>
+                   <p>Nombre: ${dato.nombre}</p>
+                   <p>Cantidad: ${dato.cantidad}</p>
+                   <p>Precio: ${dato.precio}</p>
+                   <hr>
+               `;
+           });
+       }
+
+        function comprarAhora() {
+
+            let total = sumarProductos();
+            let totalCantidad = 0;
+
+             datosCompra.forEach(item => {
+
+                totalCantidad += parseInt(item.cantidad);
+             })
+
+
+           
+            alert("TU COMPRAR ES: " + totalCantidad +  " productos con un importe total " +  total + " €" );
+        }
+
+        function eliminarProducto() {
+
+            datosCompra.pop();
+            sumarProductos();
+            mostrarProductos();
+
+        }
+    </script>
+</body>
+</html>
